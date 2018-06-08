@@ -35,3 +35,25 @@ PoliMorf balances the simple and the complex allowing you the freedom to leverag
 - Customizable settings using the WordPress Customizer.
 
 - Fully responsive.
+
+# Install
+
+1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+2. Click the 'Upload New' button.
+3. Upload the zip file for PoliMorf that you downloaded
+4. Click on the 'Activate' button to use your new theme right away.
+5. Refer to the PoliMorf_User_Guide.pdf link on https://polimorfic.com/polimorf-theme/read-guide for how to customize this theme.
+6. Navigate to Appearance > Customize in your admin panel and customize to taste.
+
+If installing a newer version:
+
+1. In your admin panel, go to Appearance -> Themes
+2. Activate another theme
+3. Delete PoliMorf
+4. Add a new theme as above.
+
+# Licence
+
+PoliMorf WordPress Theme, Copyright 2018 PoliMorfic.com
+PoliMorf is distributed under the terms of the GNU GPL as it is a
+WordPress theme.
