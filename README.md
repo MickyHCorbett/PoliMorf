@@ -62,14 +62,15 @@ WordPress theme.
 
 PoliMorf creates custom page templates (not the mandatory WordPress ones) using lists of elements written in a schematic language. The language itself can be customised if required. The default schematic language is shown below.
 
-In the Appearance->PoliMorf Settings page you add formats that apply site-wide. There are 6 formats:
+In the Appearance->PoliMorf Settings page you add formats that apply site-wide. There are 7 formats:
 
 - Header Format
-- Before Main Format
-- Main Format
-- After Main Format
-- Sidebar Format
 - Footer Format
+- Before Main Schematic
+- After Main Schematic
+- Post Format
+- Page Format
+- Sidebar Format
 
 The default page/post has Header, Main and Footer and is full-width.
 
