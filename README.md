@@ -57,3 +57,48 @@ If installing a newer version:
 PoliMorf WordPress Theme, Copyright 2018 PoliMorfic.com
 PoliMorf is distributed under the terms of the GNU GPL as it is a
 WordPress theme.
+
+# 1. Basic Structure
+
+PoliMorf creates custom page templates (not the mandatory WordPress ones) using lists of elements written in a schematic language. The language itself can be customised if required. The default schematic language is shown below.
+
+In the Appearance->PoliMorf Settings page you add formats that apply site-wide. There are 6 formats:
+
+- Header Format
+- Before Main Format
+- Main Format
+- After Main Format
+- Sidebar Format
+- Footer Format
+
+The default page/post has Header, Main and Footer and is full-width.
+
+For example, a simple Post Format with WordPress content, comments and Previous/Next links would look like List A.
+A simple Page Format with WordPress content and comments would look like List B.
+
+List A
+
+```
+///HEADER:
+%%DEFAULT::
+///MAIN:
+%%CONTENT_META::
+%%CONTENT_DEFAULT::
+%%PAGINATION::
+%%COMMENTS::
+///FOOTER:
+%%DEFAULT::
+```
+
+List B
+
+```
+///HEADER:
+%%DEFAULT::
+///MAIN:
+%%CONTENT_META::
+%%CONTENT_DEFAULT::
+%%COMMENTS::
+///FOOTER:
+%%DEFAULT::
+```
