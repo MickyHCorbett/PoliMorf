@@ -72,7 +72,7 @@ In the Appearance->PoliMorf Settings page you add formats that apply site-wide. 
 - Page Format
 - Sidebar Format
 
-The default page/post has Header, Main and Footer and is full-width.
+The default page/post has Header, Main (either Post or Page Format) and Footer. The layout is full-width with no sidebar.
 
 For example, a simple Post Format with WordPress content, comments and Previous/Next links would look like List A.
 A simple Page Format with WordPress content and comments would look like List B.
