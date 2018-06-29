@@ -66,13 +66,13 @@ In the Appearance->PoliMorf Settings page you add formats that apply site-wide. 
 
 - Header Format
 - Footer Format
-- Before Main Schematic
-- After Main Schematic
+- Before Main Format
+- After Main Format
 - Post Format
 - Page Format
 - Sidebar Format
 
-The default page/post has Header, Main (either Post or Page Format) and Footer. The layout is full-width with no sidebar.
+Combined together these make up a page/post format. The default page/post has Header, Main (either Post or Page Format) and Footer. The layout is full-width with no sidebar.
 
 For example, a simple Post Format with WordPress content, comments and Previous/Next links would look like List A.
 A simple Page Format with WordPress content and comments would look like List B.
@@ -103,3 +103,47 @@ List B
 ///FOOTER:
 %%DEFAULT::
 ```
+
+The entries with "///" and ending in ":" are schematic tags. Entries starting with "%%" and ending in "::" are schematic commands. The identifiers (e.g. "///") can be customised to suit. 
+
+# 1.1 Formats using theme options 
+
+If you use the Theme Options, you don't need to use schematic tags for the elements. For the default post format you simply need to enter:
+
+```
+%%CONTENT_META::
+%%CONTENT_DEFAULT::
+%%PAGINATION::
+%%COMMENTS::
+```
+
+For a default page:
+
+```
+%%CONTENT_META::
+%%CONTENT_DEFAULT::
+%%COMMENTS::
+```
+
+Any schematic tags will be removed when the options are saved. It also does not matter if you use spaces and new lines. This may help with readability.
+
+If you add any data to the Before Main Format, After Main Format and Sidebar Format, the onscreen structure will change to include these elements. So, for example, full-width becomes main content with sidebar. You can override any global settings by using local formats with the custom meta field.
+
+# 1.2 Formats using a custom meta field
+
+Within each page and post there is a custom meta field for Format. In this you specify the complete page format including schematic tags. Taking List A again:
+
+```
+///HEADER:
+%%DEFAULT::
+///MAIN:
+%%CONTENT_META::
+%%CONTENT_DEFAULT::
+%%PAGINATION::
+%%COMMENTS::
+///FOOTER:
+%%DEFAULT::
+```
+
+The DEFAULT command refers to what is filled out in the Options. You can choose to enter other commands here detailing a specific header format if you wish. You can also link this to a file of schematic commands elsewhere.
+
